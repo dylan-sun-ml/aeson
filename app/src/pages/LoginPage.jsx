@@ -100,13 +100,13 @@ function LoginPage() {
               )}
             </form>
             <div className="auth-panel__aside">
-              <p className="auth-panel__lead">New here?</p>
+              {/* <p className="auth-panel__lead">New here?</p>
               <p className="auth-panel__copy">
                 Create an account to save sessions and unlock future features.
               </p>
               <Link className="auth-link" to="/register">
                 Create an account
-              </Link>
+              </Link> */}
             </div>
           </div>
         </section>
