@@ -38,6 +38,11 @@ function SiteHeader() {
           <span className="logo__word">Aeson</span>
           <span className="logo__tagline">Support begins here.</span>
         </Link>
+        <nav className="header__actions" aria-label="Account">
+          <Link className="header__login" to="/login">
+            Login
+          </Link>
+        </nav>
       </div>
     </header>
   );
