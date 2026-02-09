@@ -3,6 +3,9 @@ import HomePage from "./pages/HomePage.jsx";
 import PolicyPage from "./pages/PolicyPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
+import AppHomePage from "./pages/AppHomePage.jsx";
+import AppProgressPage from "./pages/AppProgressPage.jsx";
+import AppSettingsPage from "./pages/AppSettingsPage.jsx";
 import { termsPolicy, privacyPolicy } from "./data/policies.js";
 
 const fallback = <HomePage />;
@@ -17,6 +20,9 @@ function App() {
       <Route path="/privacy-policy" element={<PolicyPage {...privacyPolicy} />} />
       <Route path="/terms-of-service-policy.html" element={<PolicyPage {...termsPolicy} />} />
       <Route path="/privacy-policy-policy.html" element={<PolicyPage {...privacyPolicy} />} />
+      <Route path="/app" element={<AppHomePage />} />
+      <Route path="/app/progress" element={<AppProgressPage />} />
+      <Route path="/app/settings" element={<AppSettingsPage />} />
       <Route path="*" element={fallback} />
     </Routes>
   );
